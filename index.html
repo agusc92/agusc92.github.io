@@ -7,32 +7,87 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
+        
         <nav class="menu-navegacion flex">
-            <ul class="flex">
-                <li>proyectos</li>
-                <li>sobre mi</li>
-                <li>habilidades</li>
+            <img  src="assets/logo.png" class="menu-hamburguesa">
+            <ul id="menu" class="flex_column hiden">
+                <li class="flex"><a>proyectos</a></li>
+                <li class="flex"><a>sobre mi</a></li>
+                <li class="flex"><a>habilidades</a></li>
             </ul>
-            <img src="assets/menu.png" alt="menu hamburguesa" class="menu-hamburguesa">
+            <img id="icono_menu_hamburguesa" src="assets/menu.png" alt="menu hamburguesa" class="menu-hamburguesa">
         </nav>
     </header>
     <main>
         <div id="info-personal" class="info-personal">
+            
             <h1>
-                Agustin developer
+                Agustin La Battaglia<br>
+                Web Developer
             </h1>
+            <div class="pc-container flex_column">
+                <div class="monitor flex_column">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                        
+                    
+                </div>
+                <div class="teclado flex_column">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="barra"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="habilidades">
+        <div id="habilidades" class="seccion-habilidades">
+            <h2>conocimientos en</h2>
+            <div>
 
+            </div>
         </div>
-        <div id="proyectos">
-
+        <div id="proyectos" class="seccion-proyectos">
+            <h2>mis proyectos</h2>
+            <div></div>
         </div>
-        <div id="contacto">
-
+        <div id="contacto" class="seccion-contacto">
+            <h2>medios de contacto</h2>
         </div>
 
     </main>

@@ -1,25 +1,126 @@
 h1{
-    margin: 0;
+    margin: 0 10% 0 10%;
+    text-align: center;
+    color:aliceblue
+}
+h2{
+    margin:0;
 }
 .flex{
     display:flex;
+}
+.flex_column{
+    display:flex;
+    flex-direction: column;
+}
+.hiden{
+    display: none;
 }
 header{
     position: sticky;
     top:0;
 }
 .menu-navegacion{
-    background-color: aquamarine;
-    justify-content: flex-end;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
 }
 .menu-navegacion ul{
+    box-sizing: border-box;
+    background-color: rgb(32, 30, 30);
+    margin: 0 3% 0 3%;
     list-style: none;
-    
+    position:absolute;
+    margin-top:13%;
+    border:3px dashed white;
+    width:94%;
+    padding: 0% 2% 0 2%;
+}
+.menu-navegacion li{
+    box-sizing: border-box;
+    border-bottom: 2px dashed white;
+    justify-content: center;
+}
+.menu-navegacion a{
+    font-size: 180%;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+
+}
+.menu-navegacion li:last-child{
+    border: none;
 }
 .menu-hamburguesa{
     width:45px;
 }
 .info-personal{
-    background-color: bisque;
+    background-color: rgb(32, 30, 30);
     height: 100vh;
+    padding-top: 10%;
+}
+.pc-container{
+align-items: center;
+}
+.monitor{
+    box-sizing: border-box;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin: 20% 0 0 0;
+    border: 7px solid white;
+    width:70%;
+    height: 150px;
+    padding: 2% 10% 2% 10%;
+}
+
+.monitor div{ 
+    height: 0;
+    
+    border: 1px dashed white;
+
+}
+.monitor div:first-child{
+    align-self: center;
+    border: 1px solid white;
+    width: 50%;
+    height: 40%;
+
+}
+.teclado{
+    margin-top: 30px;
+    border: 3px solid white;
+    padding: 1%;
+}
+.teclado>div{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    
+}
+.teclado>div>div{
+    flex-wrap:nowrap;
+    border: 1px solid white;
+    margin: 2px;
+    height: 13px;
+    width: 13px;
+}
+.teclado div.barra{
+    width:55px
+}
+.seccion-habilidades{
+    background-color: aquamarine;
+    height: 50vh;
+}
+.seccion-proyectos{
+    background-color: bisque;
+    height: 50vh;
+}
+.seccion-contacto{
+    background-color: aquamarine;
+    height: 75vh;
+}
+footer{
+    background-color: bisque;
+    height: 15vh;
 }
