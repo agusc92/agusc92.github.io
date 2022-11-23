@@ -1,11 +1,19 @@
 h1{
     margin: 0 10% 0 10%;
     text-align: center;
-    color:aliceblue
+    color:rgb(255, 235, 205)
 }
 h2{
+    width: fit-content;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background-color: rgb(32, 30, 30);
+    padding:30px 10px 10px 10px;
     margin:0;
+    font-size: 190%;
 }
+
 .flex{
     display:flex;
 }
@@ -16,6 +24,9 @@ h2{
 .hiden{
     display: none;
 }
+.back_white{
+    background-color: white;
+}
 header{
     position: sticky;
     top:0;
@@ -23,6 +34,7 @@ header{
 .menu-navegacion{
     background-color: rgb(0, 0, 0);
     justify-content: space-between;
+    
 }
 .menu-navegacion ul{
     box-sizing: border-box;
@@ -53,10 +65,11 @@ header{
 }
 .menu-hamburguesa{
     width:45px;
+    margin-right: 20px;
 }
 .info-personal{
     background-color: rgb(32, 30, 30);
-    height: 100vh;
+    height: 90vh;
     padding-top: 10%;
 }
 .pc-container{
@@ -66,29 +79,29 @@ align-items: center;
     box-sizing: border-box;
     justify-content: space-around;
     border-radius: 5px;
-    margin: 20% 0 0 0;
-    border: 7px solid white;
-    width:70%;
+    margin: 100px 0 0 0;
+    border: 7px solid blanchedalmond;
+    width:250px;
     height: 150px;
-    padding: 2% 10% 2% 10%;
+    padding: 8px 37px 8px 37px;
 }
 
 .monitor div{ 
     height: 0;
     
-    border: 1px dashed white;
+    border: 1px dashed blanchedalmond;
 
 }
 .monitor div:first-child{
     align-self: center;
-    border: 1px solid white;
+    border: 1px solid blanchedalmond;
     width: 50%;
     height: 40%;
 
 }
 .teclado{
     margin-top: 30px;
-    border: 3px solid white;
+    border: 3px solid blanchedalmond;
     padding: 1%;
 }
 .teclado>div{
@@ -100,7 +113,7 @@ align-items: center;
 }
 .teclado>div>div{
     flex-wrap:nowrap;
-    border: 1px solid white;
+    border: 1px solid blanchedalmond;
     margin: 2px;
     height: 13px;
     width: 13px;
@@ -109,16 +122,30 @@ align-items: center;
     width:55px
 }
 .seccion-habilidades{
-    background-color: aquamarine;
+    background-color:blanchedalmond;
     height: 50vh;
+    align-items: center;
+}
+.iconos{
+    margin-top: 45px;
+}
+.iconos img{
+    width:100px;
+}
+.seccion-tecnologias{
+    background-color: rgb(32, 30, 30);
+    height: 50vh;
+    align-items: center;
+}
+.seccion-tecnologias h2{
+    color: rgb(32, 30, 30);
+    background-color:blanchedalmond;
+    
 }
 .seccion-proyectos{
-    background-color: bisque;
-    height: 50vh;
-}
-.seccion-contacto{
-    background-color: aquamarine;
+    background-color:blanchedalmond;
     height: 75vh;
+    align-items: center;
 }
 footer{
     background-color: bisque;
