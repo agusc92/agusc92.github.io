@@ -144,8 +144,47 @@ align-items: center;
 }
 .seccion-proyectos{
     background-color:blanchedalmond;
-    height: 75vh;
+    height: 100vh;
     align-items: center;
+    justify-content: space-between;
+}
+.contenedor_proyectos{
+    
+    width: 100%;
+}
+.contenedor_proyectos>div{
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+.pieza{
+    background-image: url("assets/P.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    margin: 10px 0 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+
+.encastre{
+    background-color:blanchedalmond ;
+    border-radius: 5px;
+}
+.encastre_orizontal{
+    height: 30px;
+    width: 15px;
+    
+}
+.encastre_vertical{
+    width:30px;
+    height: 15px;
+}
+.centro_pieza{
+    justify-content: space-between;
+    width: 100%;
 }
 footer{
     background-color: bisque;
