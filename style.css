@@ -1,14 +1,28 @@
+:root{
+    --negro:rgb(32, 30, 30);
+    --claro:blanchedalmond;
+    
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+.fix{            
+    margin-top: -145px;       
+    height: 145px;       
+    visibility: hidden; 
+  } 
 h1{
     margin: 0 10% 0 10%;
     text-align: center;
     color:rgb(255, 235, 205)
 }
 h2{
-    width: fit-content;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    color: white;
-    background-color: rgb(32, 30, 30);
+    color: var(--claro);
+    background-color: var(--negro);
     padding:30px 10px 10px 10px;
     margin:0;
     font-size: 190%;
@@ -24,9 +38,6 @@ h2{
 .hiden{
     display: none;
 }
-.back_white{
-    background-color: white;
-}
 header{
     position: sticky;
     top:0;
@@ -34,11 +45,10 @@ header{
 .menu-navegacion{
     background-color: rgb(0, 0, 0);
     justify-content: space-between;
-    
 }
 .menu-navegacion ul{
     box-sizing: border-box;
-    background-color: rgb(32, 30, 30);
+    background-color: var(--negro);
     margin: 0 3% 0 3%;
     list-style: none;
     position:absolute;
@@ -55,7 +65,6 @@ header{
 .menu-navegacion a{
     font-size: 180%;
     color: white;
-    text-decoration: none;
     width: 100%;
     text-align: center;
 
@@ -68,7 +77,6 @@ header{
     margin-right: 20px;
 }
 .info-personal{
-    background-color: rgb(32, 30, 30);
     height: 90vh;
     padding-top: 10%;
 }
@@ -80,7 +88,7 @@ align-items: center;
     justify-content: space-around;
     border-radius: 5px;
     margin: 100px 0 0 0;
-    border: 7px solid blanchedalmond;
+    border: 7px solid var(--claro);
     width:250px;
     height: 150px;
     padding: 8px 37px 8px 37px;
@@ -89,31 +97,32 @@ align-items: center;
 .monitor div{ 
     height: 0;
     
-    border: 1px dashed blanchedalmond;
+    border: 1px dashed var(--claro);
 
 }
 .monitor div:first-child{
     align-self: center;
-    border: 1px solid blanchedalmond;
+    border: 1px solid var(--claro);
     width: 50%;
     height: 40%;
 
 }
 .teclado{
     margin-top: 30px;
-    border: 3px solid blanchedalmond;
+    border: 3px solid var(--claro);
     padding: 1%;
+}
+.back_white{
+    background-color: var(--claro);
 }
 .teclado>div{
     display: flex;
     justify-content: space-between;
-    
     width: 100%;
-    
 }
 .teclado>div>div{
     flex-wrap:nowrap;
-    border: 1px solid blanchedalmond;
+    border: 1px solid var(--claro);
     margin: 2px;
     height: 13px;
     width: 13px;
@@ -121,48 +130,49 @@ align-items: center;
 .teclado div.barra{
     width:55px
 }
-.seccion-habilidades{
-    background-color:blanchedalmond;
-    height: 50vh;
+.seccion-clara{
+    background-color:var(--claro);
     align-items: center;
+    justify-content: center;
 }
 .iconos{
-    margin-top: 45px;
+    margin:20vh 0 20vh 0;
 }
 .iconos img{
     width:100px;
 }
-.seccion-tecnologias{
-    background-color: rgb(32, 30, 30);
-    height: 50vh;
+.seccion-oscura{
+    background-color: var(--negro);
     align-items: center;
+    justify-content: center;
 }
-.seccion-tecnologias h2{
-    color: rgb(32, 30, 30);
-    background-color:blanchedalmond;
+.seccion-oscura h2{
+    color: var(--negro);
+    background-color:var(--claro);
     
 }
-.seccion-proyectos{
+/* .seccion-proyectos{
     background-color:blanchedalmond;
     height: 100vh;
     align-items: center;
     justify-content: space-between;
-}
+} */
 .contenedor_proyectos{
     
     width: 100%;
 }
 .contenedor_proyectos>div{
+    
     justify-content: space-between;
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
+    margin:50px 0 50px 0;
 }
 .pieza{
     background-image: url("assets/P.png");
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
     height: 150px;
     width: 150px;
-    margin: 10px 0 10px 0;
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
@@ -170,7 +180,7 @@ align-items: center;
 
 
 .encastre{
-    background-color:blanchedalmond ;
+    background-color:var(--claro) ;
     border-radius: 5px;
 }
 .encastre_orizontal{
@@ -187,6 +197,65 @@ align-items: center;
     width: 100%;
 }
 footer{
-    background-color: bisque;
-    height: 15vh;
+    background-color: var(--negro);
+}
+.contacto{
+margin: 40px 0 40px 0;
+}
+
+.contacto .pieza{
+    background-image: url('assets/fotito.webp');
+    height: 110px;
+    width:110px;
+}
+div>.pieza:nth-child(even){
+     margin-left: 70px; 
+}
+
+.contacto .encastre{
+    background-color: var(--negro);
+}
+.referencia{
+    color:var(--claro);
+    font-size: 120%;
+}
+.tarjeta_contacto{
+    align-items: center;
+    background-color: var(--claro);
+    position: fixed;
+    top:20vh;
+    padding: 20px;
+    margin-left: 5%;
+    box-shadow: 0px 0px 40px rgb(129, 124, 86);
+    border-radius: 15px;
+}
+
+.tarjeta_contacto>img{
+    width: 150px;
+    margin-bottom: 40px;
+    
+}
+.tarjeta_contacto a img{
+    width:40px;
+    margin-top: 20px;
+    
+}
+.tarjeta_contacto span{
+    font-size:17px;
+    
+}
+.campo{
+
+}
+.info>div{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.info_personal{
+    margin-left: 15px;
+}
+.redes{
+    align-items: center;
+    margin-top: 10px;
 }

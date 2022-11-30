@@ -17,15 +17,16 @@
         <nav class="menu-navegacion flex">
             <img  src="assets/logo.png" class="menu-hamburguesa">
             <ul id="menu" class="flex_column hiden">
-                <li class="flex"><a>proyectos</a></li>
-                <li class="flex"><a>sobre mi</a></li>
-                <li class="flex"><a>habilidades</a></li>
+                <li class="flex"><a href="#presentacion">presentacion</a></li>
+                <li class="flex"><a href="#habilidades">habilidades</a></li>
+                <li class="flex"><a href="#proyectos">proyectos</a></li>
+                <li class="flex"><a href="#contacto">contacto</a></li>
             </ul>
             <img id="icono_menu_hamburguesa" src="assets/menu.png" alt="menu hamburguesa" class="menu-hamburguesa">
         </nav>
     </header>
     <main>
-        <div id="info-personal" class="info-personal">
+        <div id="presentacion" class="info-personal seccion-oscura">
             
             <h1>
                 Agustin La Battaglia<br>
@@ -78,25 +79,25 @@
                 </div>
             </div>
         </div>
-        <div id="habilidades" class="seccion-habilidades flex_column">
+        <div id="habilidades" class="seccion-clara flex_column ancla">
             <h2>lenguajes</h2>
-            <div class="lenguajes flex iconos">
+            <div class="flex iconos">
                 <img src="assets/iconohtml.png" alt="">
                 <img src="assets/iconojs.png" alt="">
                 <img src="assets/iconocss.png" alt="">
             </div>
         </div>
-        <div id="tecnologias" class="seccion-tecnologias flex_column ">
+        <div id="tecnologias" class="seccion-oscura flex_column ">
             <h2 >tecnologias</h2>
-            <div class="iconos">
+            <div class="iconos flex">
                 <img src="assets/ajax.png" alt="">
             </div>
         </div>
-        <div id="contacto" class="seccion-proyectos flex_column">
+        <div id="proyectos" class="seccion-clara flex_column">
             <h2>proyectos</h2>
             <div class="contenedor_proyectos flex_column">
                 <div class="flex">
-                    <div class="flex_column pieza">
+                    <div class="flex_column pieza" data-rende="generala">
                         <div class="flex">
                             <div class="encastre encastre_vertical"></div>
                         </div>
@@ -112,7 +113,7 @@
                             <div class="encastre encastre_vertical"></div>
                         </div>
                     </div>
-                    <div class="flex_column pieza">
+                    <div class="flex_column pieza" data-rende="tateti">
                         <div class="flex">
                             <div class="encastre encastre_vertical"></div>
                         </div>
@@ -128,8 +129,9 @@
                     </div>
                     
                 </div>
+                
                 <div class="flex">
-                    <div class="flex_column pieza">
+                    <div class="flex_column pieza" data-rende="memotest">
                         <div class="flex">
                             <div class="encastre encastre_vertical"></div>
                         </div>
@@ -143,46 +145,17 @@
                             <div class="encastre encastre_vertical"></div>
                         </div>
                     </div>
-                    <div class="flex_column pieza">
+                    <div class="flex_column pieza" id="contacto" data-rende="tarjeta">
                         <div class="flex">
                             <div class="encastre encastre_vertical"></div>
                         </div>
                         <div class="flex centro_pieza">
                             <div class="encastre encastre_orizontal"></div>
-                            <div class="proyecto"></div>
+                            <div class="proyecto">
+                                
+                            </div>
                             <div class="encastre encastre_orizontal"></div>
-
-                        </div>
-                        <div class="flex">
-                            <div class="encastre encastre_vertical"></div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="flex">
-                    <div class="flex_column pieza">
-                        <div class="flex">
-                            <div class="encastre encastre_vertical"></div>
-                        </div>
-                        <div class="flex centro_pieza">
-                            <div class="encastre encastre_orizontal"></div>
-                            <div class="proyecto"></div>
-                            <div class="encastre encastre_orizontal"></div>
-
-                        </div>
-                        <div class="flex">
-                            <div class="encastre encastre_vertical"></div>
-                        </div>
-                    </div>
-                    <div class="flex_column pieza">
-                        <div class="flex">
-                            <div class="encastre encastre_vertical"></div>
-                        </div>
-                        <div class="flex centro_pieza">
-                            <div class="encastre encastre_orizontal"></div>
-                            <div class="proyecto"></div>
-                            <div class="encastre encastre_orizontal"></div>
-
+    
                         </div>
                         <div class="flex">
                             <div class="encastre encastre_vertical"></div>
@@ -194,9 +167,70 @@
         </div>
 
     </main>
-    <footer>
+    <footer id="contacto" class="seccion-oscura flex_column">
+        <h2>contacto</h2>
+        <div class="contacto flex">
+            
+            <div>
+                <div class="flex_column pieza" id="contacto" data-rende="tarjeta">
+                    <div class="flex">
+                        <div class="encastre encastre_vertical"></div>
+                    </div>
+                    <div class="flex centro_pieza">
+                        <div class="encastre encastre_orizontal"></div>
+                        <div class="proyecto">
+                            
+                        </div>
+                        <div class="encastre encastre_orizontal"></div>
 
+                    </div>
+                    <div class="flex">
+                        <div class="encastre encastre_vertical"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="referencia">
+            <span>referencia a creador de iconos:</span> <a href="https://www.freepik.com" title="Freepik" target="_blank"> Freepik </a>
+        </div>
     </footer>
-    <footer></footer>
+    <div id="tarjeta" class="flex_column tarjeta_contacto hiden" >
+        
+        
+        <img src="assets/fotito.webp" alt="">
+        <div class="flex_column info">
+            <div>
+                <span class="campo">Nombre:</span> 
+                <span class="info_personal">Agustin Osmar</span>
+            </div>
+            <div>
+                <span class="campo">Apellido:</span>
+                <span class="info_personal">La Battaglia</span>
+            </div>
+            <div>
+                <span class="campo">E-mail: </span>
+                <span class="info_personal">agustinlabattaglia92@gmail.com</span>
+            </div>
+            <div class="redes flex_column">
+                <span>Redes sociales</span>
+                <div>
+                    <a href="#">
+                        <img src="assets/face.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/insta.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/in.png" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+            
+    
+    </div>
+    
 </body>
 </html>
