@@ -30,9 +30,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         setTimeout(()=>{dibujo_teclas[index].classList.toggle('back_white')},200)
     }
     setInterval(presionar,150);
-    const mostrar=()=>{
-        mostrando.classList.toggle('hiden')
-    }
+    const mostrar=()=>mostrando.classList.toggle('hiden')
+    
     cerrar.addEventListener('click',mostrar)
     const aparecer=(elemento)=>{
         mostrando=document.querySelector(`#${elemento.dataset.rende}`)
@@ -42,6 +41,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     elementos.forEach(ele=>{
         ele.addEventListener('click',()=>{
             aparecer(ele)
+        })
+        ele.addEventListener('mouseover',()=>{
+            ele.classList.add('animate__animated')
+            ele.classList.add('animate__swing')
+        })
+        ele.addEventListener('mouseleave',()=>{
+            ele.classList.remove('animate__animated')
+            ele.classList.remove('animate__swing')
         })
         
     })
