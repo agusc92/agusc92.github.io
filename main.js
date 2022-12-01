@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     icono_menu_hamburguesa.addEventListener('click',menu_togle)
     menu.addEventListener('click',menu_togle)
     let mostrando;
-
+    let cerrar = document.querySelector('.cerrar');
     let dibujo_teclas = [...document.querySelectorAll('.teclado>div>div')];
     let elementos=[...document.querySelectorAll('.pieza')];
     const links = [...document.querySelectorAll('nav a')]
@@ -30,10 +30,13 @@ document.addEventListener('DOMContentLoaded',()=>{
         setTimeout(()=>{dibujo_teclas[index].classList.toggle('back_white')},200)
     }
     setInterval(presionar,150);
-
+    const mostrar=()=>{
+        mostrando.classList.toggle('hiden')
+    }
+    cerrar.addEventListener('click',mostrar)
     const aparecer=(elemento)=>{
         mostrando=document.querySelector(`#${elemento.dataset.rende}`)
-        mostrando.classList.toggle('hiden')
+        mostrar()
     }
     
     elementos.forEach(ele=>{

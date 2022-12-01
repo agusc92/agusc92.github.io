@@ -1,5 +1,5 @@
 :root{
-    --negro:rgb(32, 30, 30);
+    --negro:#201e1e;
     --claro:blanchedalmond;
     
 }
@@ -202,7 +202,6 @@ footer{
 .contacto{
 margin: 40px 0 40px 0;
 }
-
 .contacto .pieza{
     background-image: url('assets/fotito.webp');
     height: 110px;
@@ -223,17 +222,17 @@ div>.pieza:nth-child(even){
     align-items: center;
     background-color: var(--claro);
     position: fixed;
-    top:20vh;
+    top:50%;
+    left: 50%;
+    margin-top: -210px;
+    margin-left:-160px;
     padding: 20px;
-    margin-left: 5%;
     box-shadow: 0px 0px 40px rgb(129, 124, 86);
     border-radius: 15px;
 }
-
 .tarjeta_contacto>img{
     width: 150px;
-    margin-bottom: 40px;
-    
+    margin-bottom: 40px; 
 }
 .tarjeta_contacto a img{
     width:40px;
@@ -241,11 +240,9 @@ div>.pieza:nth-child(even){
     
 }
 .tarjeta_contacto span{
-    font-size:17px;
-    
+    font-size:17px;  
 }
 .campo{
-
 }
 .info>div{
     display: flex;
@@ -258,4 +255,9 @@ div>.pieza:nth-child(even){
 .redes{
     align-items: center;
     margin-top: 10px;
+}
+.cerrar{
+    width: 30px;
+    position: absolute;
+    right: 20px;
 }
